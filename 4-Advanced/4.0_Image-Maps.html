@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.0 - Image Maps</title>
+
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/1.7_Linking-to-CSS.css">
+  </head>
+
+  <body>
+    <img src="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/Desk.jpg" alt="Desk with Objects (Clickable)"
+         usemap="#desk" />
+
+    <map name="desk">
+      <area shape="circle" coords="181,194,43"
+            alt="Bagel" href="https://en.wikipedia.org/wiki/Bagel"
+            target="_blank">
+    </map>
+    <!-- NOTE
+          - The attribute shape has 4 different options:
+              - rect    - Rectangle. Top left then bottom right. (x1, y1, x2, y2). 2 pairs of coordinates (4 coordinates in total)
+              - circle  - Circle. Center of the circle and then radius. (x, y, radius)
+              - poly    - Polygonal. All edges of a shape are needed. (xn+1, yn+1) [where n starts at 0]
+              - default - An entire region
+    -->
+  </body>
+</html>
+
+<!--
+    - ATT: usemap     - Links it to map HTML code
+    - TAG: <map>      - Creates a "map" of an image using coordinates for clickable events
+    - ATT: name       - Sets name for tag (in this case, sets a name for the map tag)
+    - TAG: <area>     - Defines an area in the map
+    - ATT: shape      - Defines which shape will be drawn out on the map (see Notes)
+    - ATT: coords     - The coordinates in the <map>
+-->

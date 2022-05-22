@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>1.3 - Inline Formatting & Entities</title>
+
+    <style> /* Everything between these two <style> braces works the same way as it does in a CSS file, including this comment! */
+      #sizeUp {
+        font-size: 35px;
+      }
+    </style> <!-- The reason we don't use this method is because of large scale webpages. They require massive amounts of HTML and CSS. Mixing the
+    two up is a recipe for a disaster. It makes them both extremely difficult to code and debug in. Plus, it's much more organized within seperate files. -->
+  </head>
+
+  <!-- Also beware! Everything below (minus the use of the Entities) is taboo in HTML coding. Inline formatting is frowned upon, as it is always reserved for
+       CSS files to handle. You wouldn't place HTML code in a CSS file, and so the opposite applies here -->
+  <body style="background-color:gray">
+    <pre> Anything
+          t  hat you do in this field
+        will be displayed exactly
+          the
+     same way.
+    </pre>
+    <br>
+    <p>This is a <b>test</b> to <i>demonstrate</i> how <u>formatting text</u> works.</p>
+    <p><strong>This makes the text bold.</strong></p>
+    <p><em>This makes the text italicized</em></p>
+    <p>(Yes, both <b>"&#60;b&#62;"</b> and <i>"&lti&gt"</i> work the same as <strong>"&ltstrong&gt"</strong> and <em>"&ltem&gt"</em>)</p>
+    <p>If you wish to <mark>highlight something important.</mark></p>
+    <p>Here you can <del>strikeflu</del> strikethrough text.</p>
+    <p><small>As you can tell, this text is small.</small></p>
+    <p>My favourite colour is <del>blue</del> <ins>green</ins>
+    <p>Math problem 1: 2<sup>2</sup> = 4.</p>
+    <p>Math problem 2: log<sub>10</sub> = 1</p>
+    <p>Diacritical Mark: a&#770;</p>
+    <p id="sizeUp">An Emojii: &#129297;</p>
+  </body>
+</html>
+
+<!-- NOTES
+      - Reserved characters in HTML must be replaced with character entities. It is best practice to use entity numbers versus using entity abbreviations.
+
+      - Eg. &lt represents < (a less-than symbol "lt"). It can also be written as &#60; (<< REMEMBER TO PLACE A SEMI-COLON (;) IF YOU ARE DOING IT THIS WAY)
+
+      - You can also combine diacritical marks with letters (line 26)
+
+      - Emojii's can also be used!
+-->
+
+<!--
+    - TAG: <style>  - This is the lazy, inline way of implementing CSS in your HTML. THIS IS NOT RECOMMENDED, AND IS PURELY HERE FOR KNOWLEDGE OR TESTING
+    - TAG: <pre>    - Preformatted text
+    - TAG: <b>      - Bold
+    - TAG: <i>      - Italicize
+    - TAG: <u>      - Underline
+    - TAG: <strong> - Important text
+    - TAG: <em>     - Emphasized text
+    - TAG: <mark>   - Highlights text
+    - TAG: <del>    - Strikethrough text
+    - TAG: <small>  - Makes text small
+    - TAG: <ins>    - Inserts text and underlines it
+    - TAG: <sup>    - Superscript (place text on a higher level)
+    - TAG: <sub>    - Subscript (place text on a lower level)
+-->

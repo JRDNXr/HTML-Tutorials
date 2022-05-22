@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>1.2 - Links, Images, & Emails</title>
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/1.1_Default.css">
+  </head>
+
+  <body>
+    <a href="https://www.google.ca/" title="Search Google">Click here to go to Google<a/>
+    <!-- NOTE
+          - The <a> tag defines a hyperlink
+          - The href attribute specifies the URL of the page the link goes to
+    -->
+    <br><br>
+    <img src="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/JRDN.png" alt="JRDN Logo"
+         target="_blank" style="max-width:100%;height:auto;" />
+         <!-- width="150" height="100" -->
+    <!-- NOTE
+        - The <img> tag is used to embed an image in an HTML page.
+        - The src attribute specifies the path to the image to be displayed.
+        - The alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+        - The width and height attributes define the size for the image. There are many ways of changing the size.
+          However, the default is pixels (px). You can also use percent (%).
+    -->
+    <!-- NOTE
+      Absolute URLs and Relative URLs
+      ===============================
+      Absolute URL: Links to an external image that is hosted on another website.
+
+      Relative URL: Links to an image that is hosted within the website or saved locally.
+
+      Tags and Attributes
+      ===================
+      <tag attribute="attribute value"
+    -->
+    <br><br>
+    <!-- Linking a URL to an Image -->
+    <a href="https://www.google.ca">
+    <img src="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/Guitar.jpg" alt="Red-Electric-Guitar"
+         target="_blank"
+         style="width:130px;height:170px;" />       <!-- A different way to change the width and height of an image -->
+
+    <!-- Floating an Image -->
+    <p>&nbsp&lt-- Image is on the left
+    <img src="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/Guitar.jpg" alt="Red-Electric-Guitar"
+         style="float:left;width:25px;height:25px;" /></p>
+    <br><br>
+
+    <!-- Picture Tag -->
+    <picture>
+      <source srcset="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/plane-small.jpg" media="(max-width: 600px)">
+      <source srcset="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/plane-medium.jpg" media="(max-width: 1500px)">
+      <img src="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/plane-medium.jpg" style="width:auto"/>
+    </picture>
+    <br><br>
+
+    <!-- Linking to an Email Address -->
+    <br><br>
+    <a href="mailto:jrdn_dsouza@hotmail.com">SEND FEEDBACK</a>
+  </body>
+</html>
+
+<!--
+    - TAG: <a>      - Defines a hyperlink
+    - ATT: <href>   - Specifies the URL or link
+    - ATT: <title>  - When a mouse hovers over the text, it displays this text. Title is both a TAG and an ATTRIBUTE. This is for the attribute
+    - ATT: target   - Target for where (or what) the URL should load
+        - _self     - Opens in the same window as it was clicked
+        - _blank    - Opens in a new window or tab
+        - _parent   - Opens in the parent frame
+        - _top      - Opens in the full body of the window
+        - [URL]     - Can open a URL in an IFrame
+    - TAG: <img>    - Image
+    - ATT: src      - Specifies the path to the image to be displayed
+    - ATT: float    - Places photo in-line with text (either left or right)
+    - ATT: width    - width (px, %)
+    - ATT: height   - Height (px, %)
+    - ATT: max-width - While property is set to 100%, the iage will scale down, but never scale more than it's original size
+-->
