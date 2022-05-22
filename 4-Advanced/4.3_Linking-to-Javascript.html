@@ -4,7 +4,17 @@
     <meta charset="utf-8">
     <title>3.1 - Linking to Javascript</title>
     <link rel="stylesheet" href="../../../CSS/Learning/1.7_Linking-to-CSS.css">
-    <script src="../../../Javascript/Learning/0-HTML-Links/1.1_Default.js"></script>
+
+    <!-- Make sure to comment the line below before executing the code -->
+    <script src="../../../Javascript/Learning/0-HTML-Links/4.3_Linking-to-JavaScript.js"></script>
+
+    <script> // The <script> tag is the same as writing code within a JavaScript file. This method is NOT recommended, and is for educational purposes.
+      function clickedButton() {
+        alert("Congrats! You ran code from INSIDE HTML!");
+
+        // This is a comment within JavaScript. This only works since it is between the <script> tags
+      }
+    </script>
   </head>
 
   <button onclick=clickedButton()>CLICK ME!!</button>
