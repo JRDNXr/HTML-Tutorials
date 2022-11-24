@@ -1,0 +1,13 @@
+body {
+  background-color: lightslategray;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+/*
+    - font-weight   - Formatting how bold the text should be
+*/
