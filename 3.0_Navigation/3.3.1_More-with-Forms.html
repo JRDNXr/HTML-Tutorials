@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="More with forms" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="JRDN" />
+    <meta http-equiv="refresh" content"30" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.3.1_More with Forms</title>
+    <link rel="icon" type="image/x-icon" href="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Extras/JD-Logo-King-Custom4-T.png" />
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/1.2_Default.css" />
+
+    <style>
+      body {
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="index.html" method="post" autocomplete="on" enctype="multipart/form-data" accept-charset="UTF-8" novalidate>
+      <label for="username">Username:</label>
+      <input type="text" placeholder="Enter username here..." id="username" name="form-username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" name="form-password"><br><br>
+      <input type="reset" value="RESET" />
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </body>
+
+</html>
+
+<!-- NOTES
+      - The method attribute uses both of the HTTP transactions "post" and "get".
+      - GET requests information (usually viewing something) from the server. Nothing is changed, and is displayed as is.
+      - POST is used for securely changing something (eg. password) and submits information to the server
+      - DO NOT USE GET TO CHANGE SENSITIVE INFORMATION LIKE PASSWORDS. THIS INFORMATION CAN BE VIEWED EASILY IN URL'S
+
+      - Enctype:
+        - application/x-www-form-urlencoded 	Default. All characters are encoded before sent (spaces are converted to "+" symbols, and
+                                              special characters are converted to ASCII HEX values)
+        - multipart/form-data 	              This value is necessary if the user will upload a file through the form
+        - text/plain 	                        Sends data without any encoding at all. Not recommended
+-->
+
+<!--
+    - ATT: action         - Defines the action to be performed when the form is submitted.
+    - ATT: method         - Specifies the HTTP method to be used when submitting the form data.
+    - ATT: autocomplete   - Will complete values based on previous values the user has entered before.
+    - ATT: novalidate     - Boolean. When present, it specifies that the form data SHOULD NOT be validated. Omit this part if you need the form to be validated.
+    - ATT: enctype        - Specifies how the form-data should be encoded when submitting it to the server.
+    - ATT: accept-charset - Specifies the character encodings that are to be used for the form submission.
+-->

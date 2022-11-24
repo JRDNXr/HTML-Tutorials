@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2.4 - CSS ID's, Classes, DIV, & Span</title>
+    <link rel="icon" type="image/x-icon" href="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Extras/JD-Logo-King-Custom4-T.png">
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/2.4_CSS-IDs-Classes-DIV-and-Span.css">
+  </head>
+
+  <body>
+    <p id="tx-rd">This text is all in RED.</p>
+    <p id="tx-gr">This text is all in GREEN.</p>
+    <br>
+    <p>This text is normal, except for <span id="tx-bl">BLUE.</span></p>
+    <p>This text is also normal, except for <span id="tx-pr">PURPLE.</span></p>
+    <br>
+    <p>If you wish to target multiple blocks, we use a <b>CLASS.</b><p>
+    <br>
+    <p class="custom1">This is paragraph 1</p>
+    <p class="custom1">This is paragraph 2</p>
+    <p class="custom1">This is paragraph 3</p>
+
+    <p class="custom2">This is paragraph 4</p>
+    <p class="custom2">This is paragraph 5</p>
+    <p class="custom2">This is paragraph 6</p>
+
+    <p class="custom3">This is paragraph 7</p>
+    <p class="custom3">This is paragraph 8</p>
+    <p class="custom3">This is paragraph 9</p>
+
+    <br>
+
+    <!-- An alternative way to the above -->
+    <h2>ALTERNATIVE METHOD</h2>
+    <div class="custom1">
+      <p>This is paragraph 1</p>
+      <p>This is paragraph 2</p>
+      <p>This is paragraph 3</p>
+    </div>
+    <div class="custom2">
+      <p>This is paragraph 4</p>
+      <p>This is paragraph 5</p>
+      <p>This is paragraph 6</p>
+    </div>
+    <div class="custom3">
+      <p>This is paragraph 7</p>
+      <p>This is paragraph 8</p>
+      <p>This is paragraph 9</p>
+    </div>
+    <br>
+
+   <!-- USING MULTIPLE CLASSES IN 1 ELEMENT -->
+    <p class="class-bgRed class-txtWhite">WHITE text on a RED background v2!</p>
+
+    <!-- NOTES
+          - Use the <span> tag when you are marking up inline elements.
+          - Use the <div> tag when you are marking up multiple (block-level) elements.
+          - Use the attribute id when you are marking up items that only occur once.
+          - Use the attribute class when you are marking up items that occur multiple times.
+
+          - YOU CAN ONLY USE MULTIPLE CLASSES. YOU CANNOT USE MULTIPLE ID'S IN 1 ELEMENT
+     -->
+
+  </body>
+</html>
+
+<!--
+    - ATT: id       - Gives an element an ID for CSS to refer to
+    - TAG: <span>   - Defines a section in a document
+    - ATT: class    - Specifies one or more classnames for an element
+    - TAG: <di>     - Divider. Allows for easier grouping of elements
+-->

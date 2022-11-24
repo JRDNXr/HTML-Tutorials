@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3.1 - Linking to Javascript</title>
+    <link rel="stylesheet" href="../../../CSS/Learning/1.7_Linking-to-CSS.css">
+
+    <!-- Make sure to comment the line below before executing the code -->
+    <script src="../../../Javascript/Learning/0-HTML-Links/4.3_Linking-to-JavaScript.js"></script>
+
+    <!-- This is an example of using an external reference to a JavaScript file (a file that isn't hosted locally, but instead hosted online)
+    <script src="https://www.google.ca/javascript.js/"</script> -->
+
+    <script> // The <script> tag is the same as writing code within a JavaScript file. This method is NOT recommended, and is for educational purposes.
+      function clickedButton() {
+        alert("Congrats! You ran code from INSIDE HTML!");
+
+        // This is a comment within JavaScript. This only works since it is between the <script> tags
+      }
+    </script>
+  </head>
+
+  <button onclick=clickedButton()>CLICK ME!!</button>
+  </body>
+</html>
+
+<!--
+    - TAG: <script>   - Utilizes Javascript functions in HTML code
+-->

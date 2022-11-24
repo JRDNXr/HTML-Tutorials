@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3.0.1 - Tables Continued</title>
+    <link rel="icon" type="image/x-icon" href="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Extras/JD-Logo-King-Custom4-T.png">
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/3.0.1_Tables-Continued.css">
+  </head>
+
+  <body>
+
+    <!-- TABLE 1: 100% WIDTH TABLE -->
+    <table class="table1" style="width:100%">
+      <caption>TABLE 1: 100% WIDTH TABLE</caption>
+      <tr>
+        <th>Number</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Being but a single unit or individual; being a single person, thing, etc.</td>
+      </tr>
+      <tr style="height:200px">
+        <td>2</td>
+        <td>1 more than one, the number which is one more than one; a symbol representing this number;" Old English twa "two," fem.
+          and neuter form of twegen "two" (see twain), from Proto-Germanic *twa (source also of Old Saxon and Old Frisian twene, twa,
+          Old Norse tveir, tvau, Dutch twee, Old High German zwene, zwo, German zwei, Gothic twai), from PIE *duwo, variant of root
+          *dwo- "two."
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Just 3 more than 1.</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 2: CUSTOM WIDTHS -->
+    <table class="tableDefaultBorder">
+      <caption>TABLE 2: CUSTOM WIDTHS</caption>
+      <tr>
+        <td id="table2-sides">S</td>
+        <td>A very long piece of text that really needs to be summarized into a single, short sentence.</td>
+        <td id="table2-sides">E</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 3: CUSTOM WIDTHS 2 -->
+    <table class="tableDefaultBorder">
+      <caption>TABLE 3: CUSTOM WIDTHS 2</caption>
+      <tr>
+        <td id="table3-sides">S</td>
+        <td id="table3-center">A smaller piece of text.</td>
+        <td id="table3-sides">E</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 4: CUSTOM TABLE -->
+    <table class="tableDefault">
+      <caption>TABLE 4: CUSTOM TABLE</caption>
+      <tr>
+        <th id="table4-increaseWidth" colspan="2">NAME</th>
+        <th>DESCRIPTION</th>
+      </tr>
+      <tr>
+        <td id="table4-increaseWidth">JRDN</td>
+        <td id="table4-increaseWidth">Flash</td>
+        <td>Person</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 5: MULTIPLICATION TABLE -->
+    <table class="table5">
+      <caption>TABLE 5: MULTIPLICATION TABLE</caption>
+      <tr id="fontSizeUp">
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>4</td>
+        <td>8</td>
+        <td>12</td>
+        <td>16</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>5</td>
+        <td>10</td>
+        <td>15</td>
+        <td>20</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 6: PADDING & SPACING TABLE -->
+    <table class="table6">
+      <caption>TABLE 6: PADDING & SPACING TABLE</caption>
+      <tr>
+        <td id="table6-txt1">TEXT 1</td>
+        <td id="table6-txt2">TEXT 2</td>
+        <td id="table6-txt3">TEXT 3</td>
+        <td id="table6-txt4">TEXT 4</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 7: ROWSPAN -->
+    <table class="tableDefault">
+      <caption>TABLE 7: ROWSPAN</caption>
+      <tr>
+        <th>NAME</th>
+        <td>JRDN</td>
+      </tr>
+      <tr>
+        <th rowspan="2">FAVOURITE SPORTS</th>
+        <td>Soccer</td>
+      </tr>
+      <tr>
+        <td>Badminton</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- TABLE 8: ROWSPAN -->
+    <table class="tableDefault">
+      <caption>TABLE 8: INVISIBLE COLUMNS</caption>
+      <colgroup>
+        <col span="2">
+        <col span="3" style="visibility:collapse">
+      </colgroup>
+      <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+      </tr>
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      </tr>
+      <tr>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      </tr>
+      <tr>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+      </tr>
+      <tr>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td>28</td>
+      </tr>
+    </table>
+    </br>
+
+    <!-- TABLE 9: HORIZONTAL DIVIDERS -->
+    <table class="table9">
+      <caption>TABLE 9: HORIZOTAL DIVIDERS</caption>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID #</th>
+      </tr>
+      <tr>
+        <td>Bruce</td>
+        <td>Vann</td>
+        <td>771</td>
+      </tr>
+      <tr>
+        <td>Km</td>
+        <td>St Clair</td>
+        <td>148</td>
+      </tr>
+    </table>
+    <br>
+
+  </body>
+</html>
+
+<!--
+    - ATT: colspan    - Adjust the column span of a table
+    - TAG: <colgroup> - Specifies a group of one or more columns in a table for formatting
+    - TAG: <col span> - Specifies column properties
+-->

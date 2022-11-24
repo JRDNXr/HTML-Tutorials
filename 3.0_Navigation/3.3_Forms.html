@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-CA" dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Forms" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="JRDN" />
+    <meta http-equiv="refresh" content"30" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.3 - Forms</title>
+    <link rel="icon" type="image/x-icon" href="/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Extras/JD-Logo-King-Custom4-T.png" />
+    <link rel="stylesheet" href="../../../CSS/Learning/0-HTML-Links/1.2_Default.css" />
+  </head>
+
+  <body>
+    <h1>FORM 1</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" placeholder="Enter your first name" id="firstName" name="form-firstName" autofocus><br><br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" value="Enter your last name" id="lastName" name="form-lastName"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="form-password"><br><br>
+      <label for="test1">Test 1:</label>
+      <input type="text" id="test1" name="form-test1" disabled><br><br>
+      <label for="test2">Test 2:</label>
+      <input type="text" id="test2" name="form-test2" maxlength="15" size="25" placeholder="(leave blank and hit Submit)" required/>
+      <label for="pointsBB">Points:</label>
+      <input type="number" id="pointsBB" name="form-points" step="2" />
+      <br><br>
+
+      <!-- NOTE
+            - The placeholder attribute works only with these input types: text, search, url, tel, email, and password
+            - The disabled attribute field will not be sent when submitting a form
+            - The size attribute works only with the following: text, search, tel, url, email, and password
+            - The required attribute works only with these input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file
+            - The step attribute works only with these input types: number, range, date, datetime-local, month, time and week
+      -->
+
+      <input type="radio" id="option-gtlt1" name="form-age" value="gtlt1">
+      <label for="option-gtlt1">&#60;=30</label><br>
+      <input type="radio" id="option-gtlt2" name="form-age" value="gtlt2">
+      <label for="option-gtlt2">&#62;=31 && &#60;=59</label><br>
+      <input type="radio" id="option-gtlt3" name="form-age" value="gtlt3" checked>
+      <label for="option-gtlt3">&#62;=60 && &#60;=99</label>
+      <br><br>
+
+      <input type="checkbox" id="option-red" name="form-favColour" value="Red">
+      <label for="option-red">Red</label><br>
+      <input type="checkbox" id="option-green" name="form-favColour" value="Green">
+      <label for="option-green">Green</label><br>
+      <input type="checkbox" id="option-blue" name="form-favColour" value="Blue">
+      <label for="option-blue">Blue</label>
+      <br><br>
+
+      <fieldset>
+        <legend>Favourite Options</legend>
+        <label for="cars">Choose a car:</label>
+          <select id="cars" name="cars">
+            <optgroup label="Decent Cars">
+             <option value="option-volvo">Volvo</option>
+             <option value="option-toyota">Toyota</option>
+            </optgroup>
+            <optgroup label="Cool Cars">
+             <option value="option-lambo" selected>Lambo</option>
+             <option value="option-audi">Audi</option>
+           </optgroup>
+         </select>
+         <br><br>
+
+         <label for="computers">Choose a computer:</label>
+          <select id="listOfComputers" name="listOfComputers" size="2" multiple>
+            <option value="option-Windows">Windows</option>
+            <option value="option-Mac" selected>Mac</option>
+            <option value="option-Linux">Linux</option>
+          </select>
+      </fieldset>
+      <br>
+
+      <!-- NOTE
+            - The multiple attribute works only with the input types email and file
+      -->
+
+      <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      <br><br>
+
+      <textarea name="message" rows="10" cols="50">Leave a message here for us!</textarea><br>
+
+      <input type="reset">
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <h1>FORM 2</h1>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0 <input type="range" id="a" name="a" value="50" /> 100 +
+      <input type="number" id="b" name="b" value="50">&#32; = &#32;
+      <output name="x" for="a b"></output>
+      <br><br>
+
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+      <br><br>
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br><br>
+
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <br><br>
+
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" multiple>
+      <br><br>
+
+      <label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth">
+      <br><br>
+
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5">
+      <br><br>
+
+      <!-- NOTE:
+            - The min and max attributes work only with these input types: number, range, date, datetime-local, month, time and week
+      -->
+
+      <!--
+          NOTE: Input restrictions
+
+          checked 	   - Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+          disabled  	 - Specifies that an input field should be disabled
+          max 	 	     - Specifies the maximum value for an input field
+          maxlength 	 - Specifies the maximum number of character for an input field
+          min 	       - Specifies the minimum value for an input field
+          pattern      - Specifies a regular expression to check the input value against
+          readonly 	   - Specifies that an input field is read only (cannot be changed)
+          required 	   - Specifies that an input field is required (must be filled out)
+          size 	       - Specifies the width (in characters) of an input field
+          step 	       - Specifies the legal number intervals for an input field
+          value 	     - Specifies the default value for an input field
+
+          - The default width of an input field is 20 characters
+
+          - type="hidden" is not shown here.
+
+          - Hidden defines a hidden input field (not visible to a user).
+          - A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+          - A hidden field often stores what database record that needs to be updated when the form is submitted.
+          - NOTE: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or
+                  "View Source" functionality. Do not use hidden inputs as a form of security!
+      -->
+
+      <label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50">
+      <br><br>
+
+      <!-- NOTE
+            - The max and min attributes work ONLY with these input types: number, range, date, datetime-local, month, time and week
+      -->
+
+      <label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch">
+      <br><br>
+
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <br><br>
+
+      <!-- NOTE
+            - The pattern attribute works only with these input types: text, date, search, url, tel, email, and password
+      -->
+
+      <label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt">
+      <br><br>
+
+      <label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage">
+      <br><br>
+
+      <label for="week">Select a week:</label>
+      <input type="week" id="week" name="week">
+
+      <input type="reset" />
+    </form>
+  </body>
+</html>
+
+<!-- NOTE
+    - ATT: type        - Specifies the type of element
+    - TAG: <form>      - A container for other input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+    - TAG: <label>     - Defines a label of the input field, usually for screen-reader users.
+    - ATT: maxlength   - Set a maximum amount of characters for a text field. This works EXCLUSIVELY with text fields such as input text and textarea
+    - ATT: for         - Equivalent to the ID attribute. These two should be the same
+    - ATT: name        - Name of the form option (similar to ID). << MUST INCLUDE THIS WITH EVERY OPTION OTHERWISE THE CONTENT WILL NOT BE SENT
+    - ATT: value       - Places pre-written text within the box (usually for text boxes and Submit buttons). This text can be modified by the user
+    - ATT: placeholder - Places pre-written text within the box (usually for text boxes). This text gets deleted when the user starts typing in it
+    - ATT: readonly    - A light version of disabled. Still allows the user to still click on the text box (tab, highlight, and copy info)
+    - ATT: disabled    - Disables the text box completely (grays it out). User cannot click on the text box
+    - ATT: selected    - Defines a drop-down list
+    - TAG: <option>    - Defines an option to be selected in a drop-down list
+    - ATT: size        - Adjusts the size of a text field OR specifies the number of visible values in a drop-down list
+    - ATT: multiple    - Allows the user to choose multiple options (Windows: hold CTRL. Mac: hold Command)
+    - TAG: <datalist>  - Specifies a list of pre-defined options for an <input> element.
+    - TAG: <textarea>  - Defines a multi-line input field (a text area):
+    - TAG: <fieldset>  - Group related data in a form (surrounds with a line)
+    - TAG: <legend>    - Defines a caption for the fieldset
+    - TAG: <output>    - Used to represent the result of a calculation (like one performed by a script)
+    - ATT: oninput     - Script to be run when the element gets user input
+    - TAG: <optgroup>  - Group related options in a drop-down list
+    - ATT: checked     - Has an option selected by default
+    - ATT: required    - Specifies that a field is required in order to be submitted. Works with text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file
+    - ATT: min         - Sets the minimum amount for a range
+    - ATT: max         - Sets the maximum amount for a range
+    - ATT: multiple    - Allows the user to enter more than one value in an input field
+    - ATT: pattern     - Specifies a regular expression that the input field's value is checked against, when the form is submitted
+    - ATT: step        - Specifies the legal number intervals for an input field. Similar to number, except with intervals
+-->
