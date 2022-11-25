@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- All the information on this page relates to Metadata. You can skip this part for now if your starting out. -->
+
+<!-- Metadata is used to help search engines understand your web content better. When a user searches for something, web browsers
+     utilize metadata to show relavant search results to the user. Metadata is also used in search engines and other web services. -->
+     
+<!-- There are a lot of attributes that go along with the meta tag. Meta tags are better suited in the <head> tag at the top of your
+     HTML document. -->
+
+<!-- Metadata is not shown on your webpage to the user. It stays hidden behind the scenes. Note that anyone can view the
+     source code of your webpage and will see the metadata information there. -->
+
+<!-- lang stands for "Language". Defines the language your content is in. -->
+<!-- dir stands for "Direction". Describes what direction your content flows in. (ltr is "left to right"). -->
+<html lang="en-CA" dir="ltr">
+  <head>
+
+    <!-- Charset describes the characters that the webpage is utilizing. It determines how text is stored and transmitted. -->
+    <meta charset="UTF-8"/>
+
+    <!-- Description is a brief description of your web content. -->
+    <meta name="description" content="Hello, World!" />
+
+    <!-- Keywords are independant, selective, and important words that describe your webpage. -->
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    
+    <!-- Author is the author of the webpage. -->
+    <meta name="author" content="JRDN" />
+
+    <!-- http-equiv is how often the webpage should refersh itself. This does not affect the users experience while they are
+         using your website. Content here describes the timer for the refresh. It is described in seconds.  -->
+    <meta http-equiv="refresh" content="30" />
+
+    <!-- Base specifies the base URL to use for all relative URLs in a document. There can only be one base URL.
+
+         These are examples of what the target attribute can do:
+           - _self         - Opens in the same window as it was clicked
+           - _blank        - Opens in a new window or tab
+           - _parent       - Opens in the parent frame
+           - _top          - Opens in the full body of the window
+           - [URL]         - Can open a URL in an IFrame
+    -->
+    <base href="" target="_blank" />
+
+    <!-- Viewport sets how the webpage should be displayed to the user. This is essential when you need the website to appear
+         on several different device sizes. Content here describes how the webpage should look. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>1.0.2 - HTML Metadata Info</title>
+    <link rel="icon" type="image/x-icon" href="/Users/JRDN/Documents/Coding/HTML/4.0_Learning/0.0_Pictures/JD-Logo-King-Custom.png">
+  </head>
+
+  <body>
+    <p>Inspect or check the source content of this webpage!</p>
+  </body>
+
+  <footer>
+  </footer>
+</html>
+
+<!--
+    - ATT: lang            - Language of the page
+    - ATT: dir             - Direction that the page should be read ("ltr" is left to right. "rtl" is right to left)
+    - TAG: <meta>          - Used to specify data that is used by the browser or search engines
+    - ATT: content         - A explanation for a webpage
+    - TAG: <base>          - Specifies the base URL and target for all relative URLs in a document
+    - ATT: target          - Target for where (or what) the URL should load
+-->
