@@ -1,0 +1,95 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+}
+
+caption {
+  font-weight: bold;
+}
+
+/* TABLE 1: CUSTOM TABLE */
+table.table1, table.table1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.table1 th {
+  color: deepskyblue;
+  background-color: black;
+  border: 1px solid black;
+}
+
+#tb-gr {
+  color: lime;
+}
+
+/* TABLE 2: ROUNDED CORNERS TABLE */
+table.table2, table.table2 th, table.table2 td {
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+/* TABLE 3: DOTTED TABLE */
+table.table3, table.table3 th, table.table3 td {
+  border: 4px solid black;
+  border-style: dotted;
+  border-collapse: collapse;
+}
+
+/* TABLE 4: DASHED TABLE */
+table.table4, table.table4 th, table.table4 td {
+  border: 4px solid black;
+  border-style: dashed;
+  border-collapse: collapse;
+}
+
+/* TABLE 5: SOLID TABLE */
+/* Here we can change the colour of the border lines */
+table.table5, table.table5 th, table.table5 td {
+  border: 4px solid black;
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: powderblue;
+}
+
+/* TABLE 6: DOUBLE TABLE */
+table.table6, table.table6 th, table.table6 td {
+  border: 1px solid black;
+  border-style: double;
+}
+
+/* TABLE 7: GROOVE TABLE */
+table.table7, table.table7 th, table.table7 td {
+  border: 4px solid black;
+  border-style: groove;
+  border-collapse: collapse;
+
+}
+
+/* TABLE 8: RIDGE TABLE */
+table.table8, table.table8 th, table.table8 td {
+  border: 4px solid black;
+  border-style: ridge;
+  border-collapse: collapse;
+}
+
+/* TABLE 9: INSET TABLE */
+table.table9, table.table9 th, table.table9 td {
+  border: 4px solid black;
+  border-style: inset;
+  border-collapse: collapse;
+}
+
+/* TABLE 10: OUTSET TABLE */
+table.table10, table.table10 th, table.table10 td {
+  border: 4px solid black;
+  border-style: outset;
+  border-collapse: collapse;
+}
+
+/*
+
+border-collapse: Makes the borders collapse into a single border
+border-style: Changes the style of the border
+
+*/

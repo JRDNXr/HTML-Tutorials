@@ -1,0 +1,114 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+}
+
+caption {
+  font-weight: bold;
+}
+
+/* CUSTOM TABLE 1 */
+table.table1, table.table1 th, table.table1 td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+/* CUSTOM TABLES 2 & 3 */
+table.tableDefaultBorder {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+/* CUSTOM TABLE 2 */
+#table2-sides {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50px;
+  text-align: center;
+}
+
+/* CUSTOM TABLE 3 */
+#table3-center {
+  text-align: center;
+  width: 300px;
+}
+
+#table3-sides {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 500px;
+}
+
+/* CUSTOM TABLE 4, 7 & 8 */
+table.tableDefault, table.tableDefault td, table.tableDefault th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+#table4-increaseWidth {
+  width: 120px;
+}
+
+/* CUSTOM TABLE 5 */
+table.table5, table.table5 td, table.table5 th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 25px;
+  width: 500px;
+  padding: 5px;
+}
+
+table.table5 td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+/* CUSTOM TABLE 6 */
+table.table6, table.table6 th, table.table6 td {
+  border: 2px solid black;
+  border-spacing: 25px;
+}
+
+#table6-txt1 {
+  padding-left: 15px;
+}
+
+#table6-txt2 {
+  padding-top: 15px;
+}
+
+#table6-txt3 {
+  padding-right: 15px;
+}
+
+#table6-txt4 {
+  padding-bottom: 15px;
+}
+
+/* CUSTOM TABLE 9 */
+table.table9 {
+  border-collapse: collapse;
+  font-size: large;
+  width: 50%;
+}
+
+table.table9 th {
+  text-align: left;
+}
+
+table.table9 tr {
+  border-bottom: 1px solid black;
+}
+
+table.table9 tr:hover {
+  background-color: #D6EEEE;
+}
+
+/*
+
+padding-[direction]:  Adds extra space between table sections
+border-bottom:        Adds horizontal lines for a table
+
+*/
