@@ -1,0 +1,37 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+
+#p1-bold-center {
+  font-weight: bold;
+  text-align: center;
+}
+
+#p2-italic-right {
+  font-style: italic;
+  text-align: right;
+}
+
+#p3-underline-sizeup {
+  text-decoration: underline;
+  font-size: 45px;
+}
+
+#p4-strikethrough-fontchange {
+  text-decoration: line-through;
+  font-family: cursive;
+}
+
+#p5-superscript-backgroundcolor {
+  background-color: #fbfe13;
+  vertical-align: super;
+  color: black;
+}
+
+#p6-subscript-border {
+  border: 4px solid skyblue;
+  vertical-align: sub;
+}
