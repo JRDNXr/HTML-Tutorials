@@ -1,0 +1,24 @@
+body {
+  background-image: url('/Users/JRDN/Library/Mobile Documents/com~apple~CloudDocs/Coding/HTML/Learning/0-Pictures/JRDN.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  color: lime;
+}
+
+/*
+      - background-image        - Sets background as an image. You can either set the whole background as an image OR
+                                you can set the background behind text
+      - background-repeat       - Repeating characteristics
+          - no-repeat: Do not repeat
+          - repeat: Repeat everywhere
+          - repeat-x: Repeat only on the x-axis
+          - repeat-y: Repeat only on the y-axis
+          - round: Unknown
+          - space: Repeat with spaces in between
+      - background-attachment   - Have the image cover the entire element without stretching or resizing the photo
+      - background-size         - Have the image cover the entire element
+*/

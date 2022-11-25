@@ -1,0 +1,19 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+  font-size: large;
+  padding: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: lime;
+}
+
+#iframe1 {
+  /* border: none; */
+  border: 2px solid red;
+}

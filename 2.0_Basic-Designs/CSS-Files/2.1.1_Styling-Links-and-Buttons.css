@@ -1,0 +1,45 @@
+body {
+  background-color:lightslategray;
+}
+
+/* Link is when the text is standing still on the HTML page */
+a:link {
+  color: lime;
+  text-decoration: none;
+}
+
+/* Visited is when the user has clicked the link, and can visibly see which links they have recently clicked */
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+/* Hover is when the user's pointer (mouse) is over the selected text */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Active is when the user's pointer (mouse) is currently clicking on the link */
+a:active {
+  color: yellow;
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: lime;
+  color: white;
+}
+
+button:active {
+  color: black;
+}
+
+/*
+    - text-decoration: Underlining extras.
+        - Underline - Line under the text, like a link
+        - Overline - Line over the text
+        - Strikethrough - Line through the text
+        - Inherit - No line through the text
+        - None - Removes all decorations
+*/

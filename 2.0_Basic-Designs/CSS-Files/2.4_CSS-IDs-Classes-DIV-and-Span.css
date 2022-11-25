@@ -1,0 +1,62 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+}
+
+#tx-rd {
+  color: red;
+}
+
+#tx-gr {
+  color: lime;
+}
+
+#tx-bl {
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+#tx-pr {
+  color: purple;
+  font-weight: bold;
+}
+
+p.custom1, div.custom1 {
+  color: green;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+p.custom2, div.custom2 {
+  color: navy;
+  font-style: italic;
+  font-family: Helvetica;
+}
+
+p.custom3, div.custom3 {
+  color: darkslateblue;
+  text-decoration: underline;
+  font-family: Courier;
+}
+
+p.class-bgRed {
+  background-color: red;
+}
+
+p.class-txtWhite {
+  color: white;
+}
+
+/*
+
+# refers to HTML code id=" "
+
+id is useful for specific items (usually span items)
+
+. refers to HTML code class=" "
+
+class is usefull for making multiple elements work
+
+Ie. If you want the first 3 <p>'s to be all in black
+
+*/
