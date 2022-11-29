@@ -7,7 +7,13 @@
   </head>
 
   <body>
-    <button onclick="www.google.ca">Search</button>
+    <p id="googleSearch">This text will change to the current date.</p>
+
+    <!-- We specify which type of button in the "type" tag. -->
+    <!-- The onclick tag describes what happens when the user clicks the button. -->
+    <!-- For now, ignore what is inside the onclick. This is JavaScript code. -->
+    <!-- The name of the button goes towards the end ("Search"). -->
+    <button type="button" onclick="document.getElementById('googleSearch').innerHTML = Date()">Search</button>
   </body>
 </html>
 
